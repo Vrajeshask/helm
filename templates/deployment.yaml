@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-deployment
+spec:
+  replicas: 2  # Number of desired replicas (pods)
+  selector:
+    matchLabels:
+      app: my-app  # Selector to match the pods controlled by this deployment
+  template:
+    metadata:
+      labels:
+        app: my-app  # Label for the pods controlled by this deployment
+    spec:
+      containers:
+      - name: my-app-container  # Name of the container
+        image: "{{ .Values.image.repository}}/{{ .Values.application.name }}:{{.Values.image.tag |  default .Chart.AppVersion}}" # Docker image to use
+        ports:
+        - name: http
+          containerPort: 80  # Port the container exposes
+          protocol: TCP
