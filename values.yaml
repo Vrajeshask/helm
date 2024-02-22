@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 application:
   author: vrajesh
-  name: sampleapi #Aadhar Vault Manager
+  name: helm #Aadhar Vault Manager
   type: api
   
 replicaCount: 1
