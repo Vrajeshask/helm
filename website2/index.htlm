@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Website</title>
+</head>
+<body>
+    <h1>Hello,Dev-Ops World!</h1>
+    <p>This is a simple website served by NGINX. and help by Kalhaar </p>
+    <p>Using HELM </p>
+
+</body>
+</html>
